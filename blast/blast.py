@@ -1,4 +1,5 @@
 from Bio.Blast import NCBIWWW
+from Bio.Blast import NCBIXML
 import sys
 
 
