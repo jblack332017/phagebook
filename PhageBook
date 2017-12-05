@@ -2,16 +2,18 @@
 import sys
 import os
 import getopt
+from align import msa
+from gepard import runGepard
 
 class PhageBook:
   def __init__(self):
 #Declare class variables
-
+    self.CLUSTAL_PATH = './align/clustalw2'
 #Parse command line
     self.ParseCommandLine(sys.argv[1:])
 
   def helpMessage(self):
-    message = "For comparison of phage genomes.\n"
+    message = "For discovery and comparison of phage genomes.\n"
     message += "\nusage: PhageBook [OPTIONS] [INPUT FILE]\tDescription of script function"
     message += "\n   or: PhageBook [ALTERNATIVE]\t\n\n" #some alternative function
     message += "Arguments:\n    -h    show this help message and exit\n"
@@ -21,18 +23,20 @@ class PhageBook:
     sys.exit(0)
 
   def main(self):
-    #Run blast
-    #Get fasta names
-    #Get genomes
-    #Run gepard
-    #Run genome alignment
-    print "Main"
+#Run blast
+    #blast.blast()
+#Get genome fasta 
+    #wrangler.getGenomes()
+#Run gepard
+    #runGepard.runGepard(genomes,genomes)
+#Run sequence alignment
+    msa.align('test/opuntia.fasta', self.CLUSTAL_PATH)
 
   def ParseCommandLine(self, Arguments):
 #Get arguments
-    (Options, Args) = getopt.getopt(Arguments, "h")#"Options is the string of option letters that the script
-    						   # wants to recognize, with options that require an argument
-						   #followed by a colon"
+    (Options, Args) = getopt.getopt(Arguments, "h") #"Options is the string of option letters that the script
+    						    # wants to recognize, with options that require an argument
+						    # followed by a colon"
 #Check for each expected option
     OptionsSeen = {}
     for (Option, Value) in Options:
@@ -42,9 +46,8 @@ class PhageBook:
 #Respond to missing arguments
     #if not "-x" in OptionsSeen.keys():
 #Respond to no arguments used
-    if not OptionsSeen:
-      self.helpMessage()
-
+    #if not OptionsSeen:
+      #self.helpMessage()
 
 if __name__ == '__main__':
   amigo = PhageBook()
