@@ -1,0 +1,8 @@
+Phagebook.py
+README.md
+Phagebook.egg-info/PKG-INFO
+Phagebook.egg-info/SOURCES.txt
+Phagebook.egg-info/dependency_links.txt
+Phagebook.egg-info/entry_points.txt
+Phagebook.egg-info/requires.txt
+Phagebook.egg-info/top_level.txt

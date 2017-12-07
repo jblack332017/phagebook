@@ -1,2 +1,2 @@
-# phagecage
+# PhageBook
 Accepts protein and returns gepard matrix 
