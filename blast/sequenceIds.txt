@@ -1,50 +1,50 @@
-gi|29135056|ref|NP_803686.1| ORF120 [Pseudomonas phage phiKZ] >gi|18996585|gb|AAL83021.1|AF399011_120 PHIKZ120 [Pseudomonas phage phiKZ]
-gi|1038266452|gb|ANM44913.1| putative major head protein [Pseudomonas phage KTN4]
-gi|1269186904|gb|ATN94801.1| hypothetical protein SL2_224 [Pseudomonas phage SL2]
-gi|398256040|gb|AFO71060.1| major head protein [Pseudomonas phage PA7]
-gi|971764213|ref|YP_009217215.1| major capsid protein [Pseudomonas phage PhiPA3] >gi|334738127|gb|AEH03559.1| major capsid protein [Pseudomonas phage PhiPA3]
-gi|189490355|ref|YP_001956923.1| major capsid protein [Pseudomonas phage 201phi2-1] >gi|164609420|gb|ABY63029.1| major capsid protein [Pseudomonas phage 201phi2-1]
-gi|1199937765|gb|ARV76818.1| major capsid protein [Pseudomonas phage Phabio]
-gi|1199938240|gb|ARV77291.1| major capsid protein [Pseudomonas phage Noxifer]
-gi|1011814624|ref|WP_062634244.1| hypothetical protein [Caballeronia arationis] >gi|1019492320|emb|SAK59004.1| hypothetical protein AWB81_01778 [Caballeronia arationis]
-gi|1200415173|gb|OUV32370.1| hypothetical protein CBC64_00945 [Gammaproteobacteria bacterium TMED104]
-gi|1109658597|dbj|BAW19068.1| putative major head protein [Ralstonia phage RP12] >gi|1109658883|dbj|BAW19353.1| putative major head protein [Ralstonia phage RP31]
-gi|1033018787|gb|ANH52422.1| putative major capsid protein [Erwinia phage vB_EamM_Deimos-Minion]
-gi|1033018461|gb|ANH52097.1| putative major capsid protein [Erwinia phage vB_EamM_RAY]
-gi|1033018143|gb|ANH51780.1| putative major capsid protein [Erwinia phage vB_EamM_Simmy50]
-gi|589889726|ref|YP_009005109.1| major capsid protein [Erwinia phage Ea35-70] >gi|583927165|gb|AHI60467.1| major capsid protein [Erwinia phage Ea35-70]
-gi|1036167249|gb|ANJ65132.1| putative major capsid protein [Erwinia phage vB_EamM_Special G]
-gi|1150082967|gb|AQT27953.1| putative major capsid protein [Vibrio phage pVa-21]
-gi|971759685|ref|YP_009212966.1| hypothetical protein [Ralstonia phage RSL2] >gi|734703438|dbj|BAQ02645.1| hypothetical protein [Ralstonia phage RSL2]
-gi|971754054|ref|YP_009207928.1| putative major head protein [Ralstonia phage RSF1] >gi|906847009|dbj|BAS04916.1| putative major head protein [Ralstonia phage RSF1]
-gi|589287664|ref|YP_009010268.1| major head protein [Erwinia phage PhiEaH1] >gi|548652193|gb|AGX01937.1| major head protein [Erwinia phage PhiEaH1]
-gi|514051383|ref|YP_008125811.1| putative major capsid protein [Cronobacter phage CR5] >gi|398256275|gb|AFO71291.1| putative major capsid protein [Cronobacter phage CR5]
-gi|1070096458|ref|YP_009278385.1| putative major capsid protein [Erwinia phage vB_EamM_EarlPhillipIV] >gi|1050407510|gb|ANZ48923.1| putative major capsid protein [Erwinia phage vB_EamM_EarlPhillipIV]
-gi|1070099859|ref|YP_009283563.1| putative major capsid protein [Erwinia phage vB_EamM_Phobos] >gi|1050408856|gb|ANZ50264.1| putative major capsid protein [Erwinia phage vB_EamM_Phobos]
-gi|1241870715|gb|ATA65374.1| major head protein [Serratia phage 2050HW]
-gi|1183838033|ref|WP_085034721.1| hypothetical protein [Escherichia coli] >gi|1182384319|gb|ORS90794.1| hypothetical protein BHS87_26505 [Escherichia coli]
-gi|431810831|ref|YP_007237911.1| phage major capsid protein [Erwinia phage phiEaH2] >gi|402761582|gb|AFQ96806.1| phage major capsid protein [Erwinia phage phiEaH2]
-gi|1050409111|gb|ANZ50518.1| putative major capsid protein [Erwinia phage vB_EamM_Stratton]
-gi|1070063969|ref|YP_009292777.1| putative major capsid protein [Erwinia phage vB_EamM_ChrisDB] >gi|1050407236|gb|ANZ48650.1| putative major capsid protein [Erwinia phage vB_EamM_ChrisDB]
-gi|1070106307|ref|YP_009292155.1| putative major capsid protein [Erwinia phage vB_EamM_Caitlin] >gi|1050406962|gb|ANZ48377.1| putative major capsid protein [Erwinia phage vB_EamM_Caitlin]
-gi|1050408588|gb|ANZ49997.1| putative major capsid protein [Erwinia phage vB_EamM_Parshik]
-gi|1070063337|ref|YP_009290709.1| putative major capsid protein [Erwinia phage vB_EamM_Asesino] >gi|1050406688|gb|ANZ48104.1| putative major capsid protein [Erwinia phage vB_EamM_Asesino]
-gi|1070106825|ref|YP_009293055.1| putative major capsid protein [Erwinia phage vB_EamM_Huxley] >gi|1050407757|gb|ANZ49169.1| putative major capsid protein [Erwinia phage vB_EamM_Huxley] >gi|1050408314|gb|ANZ49724.1| putative major capsid protein [Erwinia phage vB_EamM_Machina]
-gi|1070096767|ref|YP_009278693.1| putative major capsid protein [Erwinia phage vB_EamM_Kwan] >gi|1050408029|gb|ANZ49440.1| putative major capsid protein [Erwinia phage vB_EamM_Kwan]
-gi|1183818080|ref|WP_085017299.1| hypothetical protein [Escherichia coli] >gi|1182390689|gb|ORS96893.1| hypothetical protein BHS84_27320 [Escherichia coli]
-gi|1009101763|gb|AMR59724.1| putative major capsid protein [Enterobacteria phage SEGD1]
-gi|849122609|ref|YP_009153369.1| putative major capsid protein [Salmonella phage SPN3US] >gi|349502786|gb|AEP83908.1| putative major capsid protein [Salmonella phage SPN3US]
-gi|406963686|gb|EKD89673.1| Major capsid protein [uncultured bacterium]
-gi|389060312|ref|YP_006383444.1| hypothetical protein TSMG0164 [Halocynthia phage JM-2012] >gi|385259103|gb|AFI55447.1| hypothetical protein TSMG0164 [Halocynthia phage JM-2012]
-gi|1199937852|gb|ARV76905.1| hypothetical protein PHABIO_274 [Pseudomonas phage Phabio]
-gi|371671493|ref|YP_004958031.1| unnamed protein product [Pseudomonas phage OBP] >gi|359843016|gb|AEV89561.1| putative major capsid protein [Pseudomonas phage OBP]
-gi|406871944|gb|EKD22638.1| hypothetical protein ACD_84C00028G0001, partial [uncultured bacterium]
-gi|1231168122|gb|ASU03587.1| hypothetical protein RISINGSUN_83 [Erwinia phage vB_EamM_RisingSun] >gi|1231168368|gb|ASU03832.1| hypothetical protein JOAD_83 [Erwinia phage vB_EamM_Joad]
-gi|1199937770|gb|ARV76823.1| hypothetical protein PHABIO_192 [Pseudomonas phage Phabio]
-gi|82701011|ref|YP_418111.1| hypothetical protein PPEV_gp078 [Pseudomonas phage EL] >gi|82657916|emb|CAG27172.1| hypothetical protein [Pseudomonas phage EL]
-gi|697024720|ref|XP_009574099.1| PREDICTED: actin, cytoplasmic 1 [Fulmarus glacialis]
-gi|1223276568|ref|WP_091315504.1| methyltransferase domain-containing protein [Amycolatopsis tolypomycina] >gi|1089607246|emb|SED23523.1| methyltransferase, FkbM family [Amycolatopsis tolypomycina]
-gi|189490435|ref|YP_001957004.1| hypothetical protein 201phi2-1p282 [Pseudomonas phage 201phi2-1] >gi|164609500|gb|ABY63109.1| hypothetical protein 201phi2-1p282 [Pseudomonas phage 201phi2-1]
-gi|902161726|gb|KNA06595.1| hypothetical protein SOVF_179550 [Spinacia oleracea]
-gi|1120971765|ref|WP_073479673.1| hypothetical protein [Streptoalloteichus hindustanus] >gi|1110518899|emb|SHE59262.1| Membrane carboxypeptidase (penicillin-binding protein) [Streptoalloteichus hindustanus]
-gi|1160931050|ref|WP_079772412.1| hypothetical protein [Salmonella enterica]
+NP_803686.1
+ANM44913.1
+ATN94801.1
+AFO71060.1
+YP_009217215.1
+YP_001956923.1
+ARV76818.1
+ARV77291.1
+WP_062634244.1
+OUV32370.1
+BAW19068.1
+ANH52422.1
+ANH52097.1
+ANH51780.1
+YP_009005109.1
+ANJ65132.1
+AQT27953.1
+YP_009212966.1
+YP_009207928.1
+YP_009010268.1
+YP_008125811.1
+YP_009278385.1
+YP_009283563.1
+ATA65374.1
+WP_085034721.1
+YP_007237911.1
+ANZ50518.1
+YP_009292777.1
+YP_009292155.1
+ANZ49997.1
+YP_009290709.1
+YP_009293055.1
+YP_009278693.1
+WP_085017299.1
+AMR59724.1
+YP_009153369.1
+EKD89673.1
+YP_006383444.1
+ARV76905.1
+YP_004958031.1
+EKD22638.1
+ASU03587.1
+ARV76823.1
+YP_418111.1
+XP_009574099.1
+WP_091315504.1
+YP_001957004.1
+KNA06595.1
+WP_073479673.1
+WP_079772412.1
