@@ -1,4 +1,6 @@
 import click
+from blast import blast
+from fasta import getProtein, getId, getGenome
 
 
 @click.group()
@@ -20,5 +22,9 @@ def run(maxresults, maxevalue, outputlocation, email, input):
     \nemail: The email you supply to ncbi, required
     \ninput: The file containing the protein in fasta format
     """
-    click.echo(email)
-    click.echo(input)
+    click.echo("Running Blast")
+    blast.runBlast(input, maxevalue)
+    click.echo("Getting Genomes")
+    getProtein.getProteins("sequenceIds.txt", email)
+    getId.getIds(email)
+    getGenome.getGenomes("genomeIds.txt", email)

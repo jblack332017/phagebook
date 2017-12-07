@@ -1,1 +1,7 @@
 venv/*
+*.pyc
+*.egg*
+genomeIds.txt
+sequenceIds.txt
+genomes/*
+proteins/*

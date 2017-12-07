@@ -1,15 +1,14 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='Phagebook',
     version='1.0',
-    py_modules=['Phagebook'],
+    ppackages=find_packages(),
 
     install_requires=[
         'Click',
         'colorama',
         'biopython',
-
     ],
     entry_points='''
         [console_scripts]
