@@ -23,7 +23,7 @@ def run(maxresults, maxevalue, outputlocation, email, input):
     \ninput: The file containing the protein in fasta format
     """
     click.echo("Running Blast")
-    # blast.runBlast(input, maxevalue)
+    blast.runBlast(input, maxevalue)
     click.echo("Getting Genomes")
     getProtein.getProteins("sequenceIds.txt", email)
     getId.getIds(email)
