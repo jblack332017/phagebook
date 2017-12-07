@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 import os
 import shutil
+import click
 from Bio import Entrez
 
 def getIds(email):
@@ -20,7 +21,7 @@ def getIds(email):
     for organism in organisms:
         organism = organism.strip()
         search_term = organism+"[orgn] AND " + organism + "[title] AND complete genome[title]"
-        print search_term
+        click.echo(search_term)
         handle=Entrez.esearch(db="nucleotide", retmax=100000, term=search_term, idtype="acc")
         genome_id=Entrez.read(handle)['IdList']
         if genome_id:
