@@ -1,4 +1,5 @@
 import click
+import os
 from os import path
 from blast import blast
 from fasta import getProtein, getId, getGenome
@@ -26,13 +27,14 @@ def run(maxresults, maxevalue, outputlocation, email, input):
     \nemail: The email you supply to ncbi, required
     \ninput: The file containing the protein in fasta format
     """
+    if not os.path.exists("phagebook-results"):
+        os.makedirs("phagebook-results")
     abspath = path.dirname(__file__)
-    click.echo("Running Blast")
-    blast.runBlast(input, maxevalue)
-    click.echo("Getting Genomes")
-    getProtein.getProteins("sequenceIds.txt", email)
-    getId.getIds(email)
-    getGenome.getGenomes("genomeIds.txt", email)
-    runGepard.runGepard(abspath, "genomes/full.fasta","genomes/full.fasta")
-    msa.align("genomes/full.fasta", abspath + "/align/clustalw2")
-
+    # click.echo("Running Blast")
+    # blast.runBlast(input, maxevalue)
+    # click.echo("Getting Genomes")
+    # getProtein.getProteins("phagebook-results/sequenceIds.txt", email)
+    # getId.getIds(email)
+    # getGenome.getGenomes("phagebook-results/genomeIds.txt", email)
+    runGepard.runGepard(abspath, "phagebook-results/genomes/full.fasta","genomes/full.fasta")
+    # msa.align("phagebook-results/genomes/full.fasta", abspath + "/align/clustalw2")
