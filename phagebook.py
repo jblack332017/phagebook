@@ -38,5 +38,5 @@ def run(maxresults, maxevalue, outputlocation, alignformat, email, input):
     getProtein.getProteins("phagebook-results/sequenceIds.txt", email)
     getId.getIds(email)
     getGenome.getGenomes("phagebook-results/genomeIds.txt", email)
-    runGepard.runGepard(abspath, "phagebook-results/genomes/full.fasta","genomes/full.fasta")
+    runGepard.runGepard(abspath+"/gepard/", "phagebook-results/genomes/full.fasta","genomes/full.fasta")
     msa.align("phagebook-results/genomes/full.fasta", abspath + "/align/clustalw2", platform, alignformat)
