@@ -1,7 +1,10 @@
 import click
+from os import path
 from blast import blast
 from fasta import getProtein, getId, getGenome
 from gepard import runGepard
+from align import msa
+
 
 @click.group()
 def cli():
@@ -15,6 +18,7 @@ def cli():
 @click.option('--outputlocation', default='/', help='The output location of the results, defaults to the current directory.')
 @click.argument('email', type=str, required=True)
 @click.argument('input', type=str, required=True)
+
 def run(maxresults, maxevalue, outputlocation, email, input):
     """
     This script takes one protein fasta file and then compares it against phages and outputs a gepard file
@@ -22,6 +26,7 @@ def run(maxresults, maxevalue, outputlocation, email, input):
     \nemail: The email you supply to ncbi, required
     \ninput: The file containing the protein in fasta format
     """
+    abspath = path.dirname(__file__)
     click.echo("Running Blast")
     blast.runBlast(input, maxevalue)
     click.echo("Getting Genomes")
@@ -29,3 +34,4 @@ def run(maxresults, maxevalue, outputlocation, email, input):
     getId.getIds(email)
     getGenome.getGenomes("genomeIds.txt", email)
     runGepard.runGepard("genomes.fasta","genomes.fasta")
+    msa.align(abspath + "/test/opuntia.fasta", abspath + "/align/clustalw2")
