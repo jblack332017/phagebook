@@ -28,4 +28,4 @@ def run(maxresults, maxevalue, outputlocation, email, input):
     getProtein.getProteins("sequenceIds.txt", email)
     getId.getIds(email)
     getGenome.getGenomes("genomeIds.txt", email)
-    runGepard.runGepard("genomes.fasta","genomes.fasta")
+    runGepard.runGepard("genomes/full.fasta","genomes/full.fasta")
