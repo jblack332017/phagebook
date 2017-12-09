@@ -8,7 +8,7 @@ def runBlast(input_file, max_e):
     fasta_file = open(input_file, 'r').read()
     # Run blast over the internet
     result_handle = NCBIWWW.qblast("blastp", "nr", fasta_file)
-    w = open('sequenceIds.txt', 'w')
+    w = open('phagebook-results/sequenceIds.txt', 'w')
     # Begin Parsing
     blast_records = NCBIXML.parse(result_handle)
     for blast_record in blast_records:

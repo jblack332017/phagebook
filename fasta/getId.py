@@ -7,8 +7,8 @@ from Bio import Entrez
 def getIds(email):
     Entrez.email = email
     organisms = []
-    for fasta_file in os.listdir('proteins'):
-        f = open('proteins/' + fasta_file)
+    for fasta_file in os.listdir('phagebook-results/proteins'):
+        f = open('phagebook-results/proteins/' + fasta_file)
         first_line = f.readline()
         start = first_line.index( "[" ) + 1
         end = first_line.index( "]", start )
@@ -27,6 +27,6 @@ def getIds(email):
         if genome_id:
             genome_ids.append(genome_id[0])
 
-    w = open('genomeIds.txt', 'w')
+    w = open('phagebook-results/genomeIds.txt', 'w')
     for genome_id in genome_ids:
         w.write(genome_id+"\n")
