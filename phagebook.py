@@ -1,7 +1,7 @@
 import click
 from blast import blast
 from fasta import getProtein, getId, getGenome
-
+from gepard import runGepard
 
 @click.group()
 def cli():
@@ -28,3 +28,4 @@ def run(maxresults, maxevalue, outputlocation, email, input):
     getProtein.getProteins("sequenceIds.txt", email)
     getId.getIds(email)
     getGenome.getGenomes("genomeIds.txt", email)
+    runGepard.runGepard("genomes.fasta","genomes.fasta")
