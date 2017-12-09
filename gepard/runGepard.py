@@ -3,9 +3,9 @@ import shlex, subprocess
 import sys
 
 def runGepard(abs_path,seq1file,seq2file):
-	command_line = "java -cp "+abs_path"+Gepard-1.40.jar org.gepard.client.cmdline.CommandLine -seq1 "+ seq1file +" -seq2 "+ seq1file +" -matrix matrices/edna.mat -outfile plot.png"
+	command_line = "java -cp "+abs_path+"Gepard-1.40.jar org.gepard.client.cmdline.CommandLine -seq1 "+ seq1file +" -seq2 "+ seq1file +" -matrix matrices/edna.mat -outfile plot.png"
 	args = shlex.split(command_line)
-	print args
+	print(args)
 	p = subprocess.Popen(args)
 	p.wait()
 
