@@ -33,6 +33,6 @@ def run(maxresults, maxevalue, outputlocation, email, input):
     getProtein.getProteins("sequenceIds.txt", email)
     getId.getIds(email)
     getGenome.getGenomes("genomeIds.txt", email)
-    runGepard.runGepard("genomes/full.fasta","genomes/full.fasta")
-    msa.align(abspath + "/test/opuntia.fasta", abspath + "/align/clustalw2")
+    runGepard.runGepard(abspath, "genomes/full.fasta","genomes/full.fasta")
+    msa.align("genomes/full.fasta", abspath + "/align/clustalw2")
 
