@@ -8,11 +8,13 @@ def getProteins(input_file, email):
     if os.path.exists("phagebook-results/proteins"):
         shutil.rmtree("phagebook-results/proteins")
     os.makedirs("phagebook-results/proteins")
-
+    full = open('phagebook-results/proteins.fasta', 'w')
     for accession_no in open(input_file,"r"): #this parameter is a file with accession number
         accession_no = accession_no.strip()
         handle = Entrez.efetch(db="protein", id=accession_no, rettype="fasta")
         file = open("phagebook-results/proteins/"+accession_no+".fasta","w+")
-        file.write(handle.read())
+        protein = handle.read()
+        file.write(protein)
+        full.write(protein)
         file.close()
     #each fasta file will be a separate file - named after accession number
