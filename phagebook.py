@@ -1,5 +1,6 @@
 import click
 import os
+import shutil
 from sys import platform
 from os import path
 from blast import blast
@@ -13,17 +14,16 @@ def cli():
     pass
 
 @cli.command()
-@click.option('--maxresults', default=20, type=int,
-                help='The max number of phage genomes to compare and return')
+# @click.option('--maxresults', default=20, type=int,
+#                 help='The max number of phage genomes to compare and return')
 @click.option('--maxevalue', default=.15, type=float,
                 help='The max E value accepted in blast')
-@click.option('--outputlocation', default='/', help='The output location of the results, defaults to the current directory.')
 @click.option('--alignformat',default='clustal', help='Desired output from clustal. Default: clustal.')
 @click.option('--blastp/--no-blastp', default=True, help='phagebook with or without blast')
 @click.argument('email', type=str, required=True)
 @click.argument('input', type=str, required=True)
 
-def run(maxresults, maxevalue, outputlocation, alignformat, email, input, blastp):
+def run(maxevalue, alignformat, email, input, blastp):
     """
     This script takes one protein fasta file and then compares it against phages and outputs a gepard file
     \nArguments:
@@ -43,9 +43,16 @@ def run(maxresults, maxevalue, outputlocation, alignformat, email, input, blastp
         getId.getIds(email)
         getGenome.getGenomes("phagebook-results/genomeIds.txt", email)
     except:
-        click.echo("Error in request, `please run phagebook run --no-blast <email> <fasta file>` to rerun ")
+        click.echo("Error in request, `please run phagebook run --no-blastp <email> <fasta file>` to rerun ")
         return
 
     runGepard.runGepard(abspath+"/gepard/", "phagebook-results/genomes/full.fasta","genomes/full.fasta")
+
+    try:
+        os.remove('phagebook-results/plot.png')
+    except OSError:
+        pass
+
+    shutil.move('plot.png', 'phagebook-results/plot.png')
     click.echo("Aligning Proteins")
     msa.align("phagebook-results/proteins.fasta", abspath + "/align/clustalw2", platform, alignformat)
