@@ -37,6 +37,8 @@ PhageBook will run the resulting proteins through the multiple sequence alignmen
 
 PhageBook will also generate a dotplot `plot.png` using Gepard
 
+![alt text](https://github.com/jblack332017/phagebook/blob/master/Flow.png)
+
 ## Commands
 The basic PhageBook command is structured `phagebook run <email> <path to protein fasta file>`
 
