@@ -1,5 +1,6 @@
 import click
 import os
+import shutil
 from sys import platform
 from os import path
 from blast import blast
@@ -42,9 +43,16 @@ def run(maxevalue, alignformat, email, input, blastp):
         getId.getIds(email)
         getGenome.getGenomes("phagebook-results/genomeIds.txt", email)
     except:
-        click.echo("Error in request, `please run phagebook run --no-blast <email> <fasta file>` to rerun ")
+        click.echo("Error in request, `please run phagebook run --no-blastp <email> <fasta file>` to rerun ")
         return
 
     runGepard.runGepard(abspath+"/gepard/", "phagebook-results/genomes/full.fasta","genomes/full.fasta")
+
+    try:
+        os.remove('phagebook-results/plot.png')
+    except OSError:
+        pass
+
+    shutil.move('plot.png', 'phagebook-results/plot.png')
     click.echo("Aligning Proteins")
     msa.align("phagebook-results/proteins.fasta", abspath + "/align/clustalw2", platform, alignformat)
