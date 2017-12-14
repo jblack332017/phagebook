@@ -6,7 +6,7 @@ While bacteriophages are extremely abundant surprisingly little is known about t
 ## Getting Started
 * Clone the PhageBook repository `git clone https://github.com/jblack332017/phagebook`
 * Install pip using the following instructions https://pip.pypa.io/en/stable/installing/
-* Install PhageBook, run `pip install .` in the phagebook directory
+* Install PhageBook, run `sudo pip install --editable .` in the phagebook directory
 * Ensure PhageBook is installed by running `phagebook --help`
 
 ## Usage
