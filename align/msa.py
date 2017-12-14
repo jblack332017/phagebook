@@ -7,7 +7,7 @@ def align(fasta_path, path_to_clustal, system, outformat="clustal"):
   elif system == "darwin":
     path_to_clustal += ".mac"
   elif system == "win32":
-    path_to_clustal += ".win"
+    path_to_clustal += ".win.exe"
   else:
     click.echo("Operating system not supported.")
     return
