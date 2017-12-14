@@ -13,17 +13,16 @@ def cli():
     pass
 
 @cli.command()
-@click.option('--maxresults', default=20, type=int,
-                help='The max number of phage genomes to compare and return')
+# @click.option('--maxresults', default=20, type=int,
+#                 help='The max number of phage genomes to compare and return')
 @click.option('--maxevalue', default=.15, type=float,
                 help='The max E value accepted in blast')
-@click.option('--outputlocation', default='/', help='The output location of the results, defaults to the current directory.')
 @click.option('--alignformat',default='clustal', help='Desired output from clustal. Default: clustal.')
 @click.option('--blastp/--no-blastp', default=True, help='phagebook with or without blast')
 @click.argument('email', type=str, required=True)
 @click.argument('input', type=str, required=True)
 
-def run(maxresults, maxevalue, outputlocation, alignformat, email, input, blastp):
+def run(maxevalue, alignformat, email, input, blastp):
     """
     This script takes one protein fasta file and then compares it against phages and outputs a gepard file
     \nArguments:
